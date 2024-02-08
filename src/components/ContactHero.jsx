@@ -39,7 +39,7 @@ const ContactHero = () => (
       
       <div className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative`}>
         {/* <img src={robot} alt="billing" className="w-[100%] h-[100%] relative z-[5]" /> */}
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfQRzejL0gOHy43dKIZc7LsuVP8rtZTSb-vmYzSy2N5VGuC_Q/viewform?embedded=true" 
+        <iframe className="z-[2]" src="https://docs.google.com/forms/d/e/1FAIpQLSfQRzejL0gOHy43dKIZc7LsuVP8rtZTSb-vmYzSy2N5VGuC_Q/viewform?embedded=true" 
           width="640" height="686" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
         {/* gradient start */}
         <div className="absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient" />
