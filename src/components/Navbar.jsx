@@ -2,6 +2,7 @@ import { useState } from "react";
 
 import { close, logo, menu } from "../assets";
 import { navLinks } from "../constants";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [active, setActive] = useState("Home");
@@ -10,7 +11,12 @@ const Navbar = () => {
   return (
     <nav className="w-full flex py-6 justify-between items-center navbar">
       {/* <img src={logo} alt="Bit Academy" className="w-[124px] h-[32px]" /> */}
-      <h1 className="w-[124px] h-[24px] font-poppins font-normal cursor-pointer text-white hover:text-[#808080]">Bit Academy</h1>
+      <h1 className="w-[124px] h-[24px] font-poppins font-normal cursor-pointer text-white hover:text-[#808080]">
+      <Link to="/" >
+      Bit Academy
+
+      </Link>
+      </h1>
 
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
         {navLinks.map((nav, index) => (
